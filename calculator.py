@@ -1,5 +1,6 @@
 #Author: h435er
 import customtkinter as ctk
+import math
 
 def button_click(number):
     current_text = textbox.get()
@@ -77,6 +78,15 @@ def main():
     
     def button_click_rbracket():
         button_click(")")
+    
+    def button_click_pi():
+        button_click("3.14")
+    
+    def button_click_comma():
+        button_click(".")
+
+    
+
 
 
 
@@ -158,6 +168,19 @@ def main():
                            border_color="gray", fg_color="green", corner_radius=5, width=70, height=70)
     multiply.pack(side=ctk.LEFT, padx=5,pady=5)
 
+
+    #extra symbols
+
+    row5=ctk.CTkFrame(buttons_frame)
+    row5.pack()
+    pi= ctk.CTkButton(row5, text="π", command=button_click_pi, border_width=1,
+                           border_color="gray", fg_color="red", corner_radius=5, width=70, height=70)
+    pi.pack(side=ctk.LEFT, padx=5,pady=5)
+
+    comma= ctk.CTkButton(row5, text=".", command=button_click_comma, border_width=1,
+                           border_color="gray", fg_color="green", corner_radius=5, width=70, height=70)
+    comma.pack(side=ctk.LEFT, padx=5,pady=5)
+
     
 
     
@@ -165,14 +188,16 @@ def main():
 
     
     # calculate and clear
-    row5=ctk.CTkFrame(buttons_frame)
-    row5.pack()
-    equal= ctk.CTkButton(row5, text="=", command=calculate, border_width=1,
+    row6=ctk.CTkFrame(buttons_frame)
+    row6.pack()
+    equal= ctk.CTkButton(row6, text="=", command=calculate, border_width=1,
                            border_color="gray", fg_color="orange", corner_radius=5, width=70, height=70)
     equal.pack(side=ctk.LEFT, padx=5,pady=5)
-    equal= ctk.CTkButton(row5, text="CLEAR", command=clear, border_width=1,
+    equal= ctk.CTkButton(row6, text="CLEAR", command=clear, border_width=1,
                            border_color="gray", fg_color="orange", corner_radius=5, width=70, height=70)
     equal.pack(side=ctk.LEFT, padx=5,pady=5)
+
+    #extra symbols
 
 
     # start the app
