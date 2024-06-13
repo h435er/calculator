@@ -1,6 +1,6 @@
 # How it looks like
-(I know the image looks terrifying but this is just how it looks like)
-![IMG-20240613-WA0000.jpg](https://github.com/h435er/calculator/assets/126166023/7cf655ce-5be3-4444-844d-a8bd6729e34d)
+![calc](https://github.com/h435er/calculator/assets/126166023/a5308efa-a296-42e7-9342-ba73d32f5e68)
+
 # About
 this is a very simple python calculator build with the CTk library (custom tkinter)
 # Usage
