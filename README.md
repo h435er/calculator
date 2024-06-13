@@ -1,3 +1,5 @@
+# How it looks like
+
 # About
 this is a very simple python calculator build with the CTk library (custom tkinter)
 # Usage
